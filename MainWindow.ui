@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>10</y>
       <width>291</width>
       <height>41</height>
@@ -122,7 +122,7 @@
    <widget class="QPushButton" name="pushButtonclose">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>220</x>
       <y>190</y>
       <width>61</width>
       <height>21</height>
@@ -133,12 +133,40 @@
       <pointsize>12</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 0);</string>
+    </property>
     <property name="text">
      <string>CLOSE</string>
     </property>
     <property name="icon">
      <iconset>
       <normaloff>../../../Downloads/1031533_cancel_close_cross_delete_remove_icon.png</normaloff>../../../Downloads/1031533_cancel_close_cross_delete_remove_icon.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtoncalculate">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>190</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 85, 0);</string>
+    </property>
+    <property name="text">
+     <string>CALCULATE</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/i_con calculate.png</normaloff>../../../Downloads/i_con calculate.png</iconset>
     </property>
    </widget>
   </widget>
