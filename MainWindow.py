@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file '/Users/huynhtanphat/Documents/Tu Duy Lap Trinh/TDLT-UEL-PTB1/MainWindow.ui'
+# Form implementation generated from reading ui file 'D:\Desktop\PycharmProjects\TDLT-UEL-PTB1\MainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -15,9 +15,15 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(110, 90, 56, 17))
+        self.pushButton.setObjectName("pushButton")
+        self.radioButton = QtWidgets.QRadioButton(parent=self.centralwidget)
+        self.radioButton.setGeometry(QtCore.QRect(100, 130, 62, 14))
+        self.radioButton.setObjectName("radioButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 37))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 18))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -30,3 +36,5 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.pushButton.setText(_translate("MainWindow", "PushButton"))
+        self.radioButton.setText(_translate("MainWindow", "RadioButton"))
