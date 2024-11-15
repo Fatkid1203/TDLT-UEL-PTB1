@@ -12,18 +12,26 @@ class MainWindowEx(Ui_MainWindow):
         self.MainWindow.show()
 
     def setupSignalAndSlot(self):
+        # Kết nối nút bấm với hàm xử lý
         self.pushButtoncalculate.clicked.connect(self.on_calculate)
 
     def on_calculate(self):
         try:
+            # Lấy giá trị a và b từ ô nhập
             a = float(self.lineEditinputa.text())
             b = float(self.lineEditinputb.text())
         except ValueError:
+            # Hiển thị thông báo lỗi nếu giá trị không hợp lệ
             QMessageBox.warning(self.MainWindow, "Lỗi", "Vui lòng nhập số hợp lệ cho a và b.")
             return
 
+        # Gọi hàm giải phương trình
         result = giai_phuong_trinh_bac_nhat(a, b)
-        self.pushButtoncalculate.clicked.connect(self.on_calculate)
+
+        # Hiển thị kết quả lên ô lineEditinputc
+        self.lineEditinputc.setText(result)
+
+
 def giai_phuong_trinh_bac_nhat(a, b):
     if a == 0:
         if b == 0:
